@@ -1,0 +1,297 @@
+
+
+/* ####### CSS POUR LA PAGE D'ACCUEIL D'UN ADMIN #######*/
+
+
+
+:root {
+  --bleuCY: #5988DA;
+  --font-family-titre: "EXO";
+  --font-family-texte: "Montserrat";
+}
+
+
+
+
+
+
+
+/* ######  TITRES #####*/
+
+.titre{
+
+    justify-content: flex-end;
+    font-size: 2.5rem;
+    color: #F1F1F1;
+    padding-right: 20px;
+    text-shadow: 3px 3px 5px #676767;
+
+}
+
+.titre1
+{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-family: var(--font-family-titre);
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.titre2
+{
+    text-align: center;
+    font-family: var(--font-family-titre);
+}
+
+.titre3
+{
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: var(--font-family-titre);
+    color: var(--grisfr);
+}
+
+.titre4
+{
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: var(--font-family-titre);
+    color: var(--poppy);
+}
+
+
+/* ##### DESIGN DES BARRES ##### */
+
+
+hr  {
+
+  background-color: #c3c6cc;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.592);
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  border : none;
+  height: 2px;
+
+}
+
+#ligneHaute {
+
+  width: 80%;
+  max-width: 800px;
+  margin: 0px auto 70px auto;
+  border-radius: 5px;
+  background-color: #699ff5;
+  border: none;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  height: 5px;
+
+}
+
+
+
+/* ######  AFFICHAGE DEs INFOS (tab) #####*/
+
+
+.titreInfo{
+    font-family: var(--font-family-texte);
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    color: #626872;
+    margin-left: 5%;
+}
+
+
+
+
+#image-profil{
+
+
+    width:90px;
+    height: auto;
+}
+
+
+.tab_info{
+
+
+    width: 100%;
+    text-align: center;
+
+}
+
+.tabInfo{
+
+    margin: 0 auto;
+    width: 90%;
+    border-collapse: collapse;
+
+
+}
+
+
+
+.tabInfo2{
+
+    margin: 0 auto;
+    width: 50%;
+    border-collapse: collapse;
+
+
+}
+
+
+
+th{
+    border-bottom: 1px solid #c3c7c5;
+    font-family: var(--font-family-texte);
+    color: #626872;
+
+
+}
+
+
+
+td {
+    text-align: center;
+    font-family: var(--font-family-texte);
+    padding: 15px;
+
+}
+
+@media (max-width: 768px) {
+    .zoneTitre{
+
+        display: flex;
+        flex-direction: column; /*Mise en colone*/
+        align-items: stretch;
+        gap: 15px;
+        margin-bottom: 20px;   
+    }
+
+    .titreInfo{
+        margin-left: 5%;
+    }
+
+    .boutonAjout{
+
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+
+     .boutonSupprimer{
+
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+   
+   
+    
+}
+
+
+
+
+.boutonAjout{
+
+    background-color: #699ff5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: var(--font-family-texte);
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.boutonAjout:hover {
+
+
+  transform: scale(1.1);  
+    
+}
+
+.boutonAjout:focus {
+
+  transition: all .25s ease;
+  transform: translateY(0.1rem);
+  box-shadow: none;
+  transform: scale(1.05);
+
+}
+
+.boutonAjout:active {
+
+  transform: scale(0.95);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.boutonSupprimer{
+
+    background-color: #699ff5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: var(--font-family-texte);
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+
+.boutonSupprimer:hover {
+
+
+  transform: scale(1.1);
+  background-color: red;
+  
+    
+}
+
+.boutonSupprimer:focus {
+
+  transition: all .25s ease;
+  transform: translateY(0.1rem);
+  box-shadow: none;
+  transform: scale(1.05);
+
+}
+
+.boutonSupprimer:active {
+
+  transform: scale(0.95);
+
+}
+
+
+
+
+
+
+
+
+.bouton-position-supprimer{
+
+    margin-top: 40px;
+    margin-bottom:40px;
+    text-align: center;
+}
